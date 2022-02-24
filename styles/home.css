@@ -107,7 +107,7 @@ button {
   color: orange;
 }
 #latin-text {
-  padding: 10%;
+  padding: 5% 10% 5% 10%;
   font-size: 3vw;
   color: black;
 }
@@ -121,6 +121,7 @@ button {
 }
 .chef img {
   border-radius: 50%;
+  max-width: 50%;
 }
 .chef p {
   color: rgb(68, 66, 66);
@@ -129,10 +130,42 @@ button {
   border-bottom: 1px solid rgb(168, 166, 166);
   padding: 2%;
 }
-.cakes q {
+.quote-text {
   font-family: "scriptina";
   color: orange;
+  font-size: 10vw;
+  line-height: 0.8;
+}
+.quote-text p {
+  display: inline;
   font-size: 6vw;
+}
+.quote-text img:first-child {
+  display: block;
+  margin: 0 0 0 10%;
+}
+.quote-text img:last-child {
+  display: block;
+  margin: 5% 0% 0 90%;
+}
+
+.four-cakes {
+  width: 100%;
+  height: auto;
+  margin-top: 20%;
+}
+.four-cakes div {
+  width: 45%;
+  height: auto;
+  display: inline-block;
+  margin: 1%;
+}
+.four-cakes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: 3px solid white;
+  outline-offset: -6px;
 }
 
 @media screen and (min-width: 900px) {
@@ -175,7 +208,7 @@ button {
     font-weight: 600;
   }
   .text-pastry h2 {
-    font-size: 6rem;
+    font-size: 6vw;
     margin: 10% 0 0 0;
     padding: 0 0 5% 0;
     background-image: linear-gradient(
@@ -206,5 +239,32 @@ button {
     background-color: rgb(67, 70, 70);
     font-size: 1.5vw;
     opacity: 0.5;
+  }
+
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container1 h2 {
+    font-size: 5vw;
+  }
+  .container1 p {
+    font-size: 2vw;
+  }
+  #latin-text {
+    font-size: 1.5vw;
+  }
+  .container1 h3 {
+    font-size: 2.5vw;
+  }
+
+  .chef p {
+    font-size: 2vw;
+  }
+  .quote-text {
+    font-size: 5vw;
+  }
+  .quote-text p {
+    font-size: 3vw;
   }
 }
