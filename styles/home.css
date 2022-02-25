@@ -10,6 +10,7 @@
   src: url("../fonts/FontsFree-Net-ProximaNova-Regular.ttf") format("truetype");
 }
 body {
+  width: 100%;
   background-color: gray;
   margin: 0;
   font-size: 16px;
@@ -150,6 +151,7 @@ button {
 }
 
 .four-cakes {
+  position: relative;
   width: 100%;
   height: auto;
   margin-top: 20%;
@@ -166,6 +168,113 @@ button {
   object-fit: cover;
   outline: 3px solid white;
   outline-offset: -6px;
+}
+#vector-circle p {
+  display: none;
+  font-size: 1.5vw;
+}
+
+.container-pancakes {
+  width: 100%;
+  height: auto;
+  background-color: rgb(226, 226, 217);
+}
+.pancakes {
+  max-width: 100%;
+  max-height: 100vw;
+  min-width: 100%;
+  min-height: 100vw;
+  object-fit: cover;
+  padding: 1%;
+  outline: 4px solid white;
+  outline-offset: -2vw;
+}
+.two-white-boxes {
+  display: flex;
+  max-width: 100%;
+  max-height: 100vw;
+  min-height: 100vw;
+  min-width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../images/flour-gf0fe3c9e4_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.big-box {
+  max-width: 60%;
+  max-height: 60vw;
+  min-width: 60%;
+  min-height: 60vw;
+  font-family: "Alegreya", sans-serif;
+  background-color: white;
+  box-shadow: 5px 5px 10px gray;
+}
+.big-box h2 {
+  font-size: 6vw;
+  color: rgb(116, 111, 111);
+  font-weight: bold;
+  margin: 10% 10% 0 10%;
+}
+.big-box p {
+  font-size: 2vw;
+  color: orange;
+  font-weight: bold;
+  margin: 0 10% 10% 10%;
+}
+#pancakes-text {
+  color: rgb(114, 112, 112);
+  margin: 10%;
+}
+
+.small-box {
+  position: absolute;
+  right: 7%;
+  top: 15%;
+  max-width: 25%;
+  max-height: 25vw;
+  min-width: 25%;
+  min-height: 25vw;
+  z-index: 1;
+  box-shadow: -5px 5px 10px 1px #aaaaaa;
+  background-color: white;
+  font-family: "Alegreya", sans-serif;
+  text-align: center;
+}
+.small-box h2 {
+  font-size: 4vw;
+  color: orange;
+  font-weight: bold;
+  margin: 5% 0 0 0;
+}
+.small-box p {
+  color: rgb(245, 206, 135);
+  font-size: 14vw;
+  margin: 0;
+  line-height: 0.5;
+}
+.small-box span {
+  color: rgb(114, 112, 112);
+  font-size: 3vw;
+  margin: 0;
+}
+.rounded-images {
+  display: flex;
+  justify-content: center;
+}
+.rounded-images img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+}
+.rounded-images svg {
+  border: 1px solid rgb(49, 46, 46);
+  margin: 4%;
+  padding: 2%;
+  border-radius: 50%;
+  width: 1vw;
+  height: 1vw;
 }
 
 @media screen and (min-width: 900px) {
@@ -266,5 +375,60 @@ button {
   }
   .quote-text p {
     font-size: 3vw;
+  }
+  #vector-circle {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    outline: 0;
+    background-size: contain;
+    background-image: url("../images/Vektor-Smartobj.png");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #vector-circle p {
+    display: block;
+  }
+  .container-pancakes {
+    display: flex;
+  }
+  .pancakes,
+  .two-white-boxes {
+    max-width: 50%;
+    max-height: 50vw;
+    min-width: 50%;
+    min-height: 50vw;
+  }
+  .big-box h2 {
+    font-size: 3vw;
+  }
+  .big-box p {
+    font-size: 1vw;
+  }
+  .big-box {
+    max-height: 30vw;
+    min-height: 30vw;
+  }
+  .small-box {
+    max-height: 13vw;
+    min-height: 13vw;
+  }
+  .small-box h2 {
+    font-size: 2vw;
+  }
+  .small-box p {
+    font-size: 7vw;
+  }
+  .small-box span {
+    font-size: 1.5vw;
+  }
+
+  .rounded-images img {
+    width: 5vw;
+    height: 5vw;
   }
 }
