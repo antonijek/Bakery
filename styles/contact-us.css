@@ -1,3 +1,5 @@
+/* IN PROGRESS ! */
+
 * {
     box-sizing: border-box;
 }
@@ -99,6 +101,11 @@ nav a {
 .contact-us h1 {
     margin: 0;
     font-size: 8vw;
+}
+
+.contact-us p {
+    margin: 2vh;
+    font-size: 1.5vw;
 }
 
 .first-tx-section {
