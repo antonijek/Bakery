@@ -280,7 +280,51 @@ nav a {
     border: 2px solid #111;
 }
 
+/* laptop/tablet divices */
+@media screen and (min-width: 901px) and (max-width: 1379px) {
 
+    .img-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+    }
+
+    .au-images {
+        width: 40%;
+        height: 40vh;
+        margin: 5% 5%;
+    }
+
+    .second-tx-section {
+        width: 100%;
+        height: auto;
+    }
+    
+    .text-2 {
+        width: 70%;
+    }
+    
+    .text-2 h2 {
+        font-size: 5vw;
+    }
+    
+    .text-2 p {
+        font-size: 1.0em;
+        line-height: 2em;
+    }
+
+    .order-form button {    
+        margin-bottom: 15%;
+    }
+
+}
+
+/* Mobile devices */
 @media screen and (max-width: 900px) {
     
     header {
@@ -388,7 +432,6 @@ nav a {
         height: auto;
     
         flex-direction: column;
- 
     }
     
     .au-images {
@@ -456,7 +499,6 @@ nav a {
     .order-form button {
         padding: 3% 20%;
         margin-bottom: 15%;
-
     }
     
     .order-form button:hover {
