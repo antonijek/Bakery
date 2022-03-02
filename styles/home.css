@@ -185,9 +185,9 @@ button {
   min-width: 100%;
   min-height: 100vw;
   object-fit: cover;
-  padding: 1%;
-  outline: 4px solid white;
-  outline-offset: -2vw;
+  padding: 10%;
+  outline: 4px solid rgb(250, 172, 5);
+  outline-offset: -11vw;
 }
 .two-white-boxes {
   display: flex;
@@ -275,6 +275,106 @@ button {
   border-radius: 50%;
   width: 1vw;
   height: 1vw;
+}
+
+.breakfast-manu {
+  text-align: center;
+  font-family: "Alegreya", sans-serif;
+  padding: 10%;
+  background: url("../images/bread-g785cfc2b6_1920.jpg") no-repeat;
+  background-size: cover;
+}
+.breakfast-manu h2 {
+  font-size: 3rem;
+  color: white;
+  line-height: 0.6;
+}
+.breakfast-manu h2 span {
+  color: orange;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.breakfast-manu h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+.breakfast-manu h3 p {
+  color: rgb(240, 196, 114);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  margin: 0;
+  font-size: 1rem;
+}
+.breakfast-manu h3 span {
+  color: orange;
+  font-size: 2rem;
+}
+.pages {
+  display: flex;
+  max-width: 100%;
+  max-height: 100vw;
+  min-height: 100vw;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alegreya", sans-serif;
+  text-align: center;
+  padding: 5%;
+  color: rgb(126, 98, 98);
+  font-size: 4vw;
+  background: url("../images/churros-gc1a242419_1280.jpg") no-repeat;
+  background-size: cover;
+}
+
+.page1,
+.page2,
+.page3 {
+  background-color: rgb(235, 228, 220);
+  outline: 1px dashed black;
+  outline-offset: -5px;
+  color: rgb(117, 91, 91);
+  box-shadow: 5px 1px 10px rgb(43, 41, 41);
+}
+.page1 {
+  position: relative;
+  max-width: 70vw;
+  max-height: 90vw;
+  min-width: 70vw;
+  min-height: 90vw;
+  padding: 5%;
+  z-index: 2;
+}
+.page2 {
+  max-width: 60vw;
+  max-height: 80vw;
+  min-width: 60vw;
+  min-height: 80vw;
+  position: absolute;
+  z-index: 1;
+  right: 11vw;
+}
+.page3 {
+  max-width: 50vw;
+  max-height: 70vw;
+  min-width: 50vw;
+  min-height: 70vw;
+  position: absolute;
+  z-index: 0;
+  right: 9vw;
+}
+.top-page {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.page1 button {
+  background-color: rgb(235, 228, 220);
+  padding: 3% 15%;
+  margin: 10%;
+  font-size: 2vw;
+  border: 2px solid black;
+  color: orange;
 }
 
 @media screen and (min-width: 900px) {
@@ -395,6 +495,7 @@ button {
   }
   .container-pancakes {
     display: flex;
+    background-image: url("../images/flour-gf0fe3c9e4_1920.jpg");
   }
   .pancakes,
   .two-white-boxes {
@@ -402,6 +503,14 @@ button {
     max-height: 50vw;
     min-width: 50%;
     min-height: 50vw;
+    background-image: none;
+  }
+  .pancakes {
+    padding: 10.1% 0 10% 20%;
+    outline: none;
+  }
+  .two-white-boxes {
+    justify-content: flex-start;
   }
   .big-box h2 {
     font-size: 3vw;
@@ -416,6 +525,7 @@ button {
   .small-box {
     max-height: 13vw;
     min-height: 13vw;
+    left: 50%;
   }
   .small-box h2 {
     font-size: 2vw;
@@ -430,5 +540,59 @@ button {
   .rounded-images img {
     width: 5vw;
     height: 5vw;
+  }
+  .container-breakfast {
+    display: flex;
+    background-image: url("../images/bread-g785cfc2b6_1920.jpg");
+  }
+  .breakfast-manu {
+    width: 50%;
+  }
+  .pages {
+    width: 50%;
+    font-size: 2vw;
+  }
+  .pages,
+  .breakfast-manu {
+    max-width: 50%;
+    max-height: 50vw;
+    min-width: 50%;
+    min-height: 50vw;
+    background-image: none;
+  }
+  .page1 {
+    position: relative;
+    max-width: 35vw;
+    max-height: 45vw;
+    min-width: 35vw;
+    min-height: 45vw;
+    padding: 5%;
+    z-index: 2;
+  }
+  .page2 {
+    max-width: 30vw;
+    max-height: 40vw;
+    min-width: 30vw;
+    min-height: 40vw;
+    position: absolute;
+    z-index: 1;
+    right: 5.5vw;
+  }
+  .page3 {
+    max-width: 25vw;
+    max-height: 35vw;
+    min-width: 25vw;
+    min-height: 35vw;
+    position: absolute;
+    z-index: 0;
+    right: 4.5vw;
+  }
+  .page1 button {
+    background-color: rgb(235, 228, 220);
+    padding: 3% 15%;
+    margin: 10%;
+    font-size: 1vw;
+    border: 2px solid black;
+    color: orange;
   }
 }
