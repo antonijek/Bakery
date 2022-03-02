@@ -40,7 +40,7 @@ header p {
     font-family: "Scriptina", sans-serif;
     margin: -5% 0 0 0;
     padding: 0;
-    color: white;
+    color: #FFF;
 }
 
 .social-network {
@@ -74,12 +74,25 @@ nav a {
     font-weight: 600;
 }
 
-.about-us {
+.about-us-wrapper {
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+.about-us {
+    width: 50%;
     height: 80vh;
     text-align: center;
-    color: white;
+    color: #FFF;
     font-family: "Playfair Display", sans-serif;
+
 }
 
 .about-us h1 {
