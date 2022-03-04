@@ -1,4 +1,4 @@
-/* IN PROGRESS ! */
+
 
 * {
     box-sizing: border-box;
@@ -108,23 +108,231 @@ nav a {
     font-size: 1.5vw;
 }
 
-.first-tx-section {
+.message-wrapper {
     width: 100%;
-    height: 100vh;
+    height: auto;
     text-align: center;
-    color: white;
+    color: #111;
     font-family: "Playfair Display", sans-serif;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+    padding: 3%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.message-wrapper form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+}
+
+.message-wrapper h2 {
+    margin: 0;
+    font-size: 5vw;
+}
+.msg-lb{
+    text-align: center;
+    font-size: 1.5em;
+    width: 30vw;
+}
+
+.msg-inp {
+    width: 100%;
+    padding: 3%;
+    border: 2px solid #111;
+    font-size: 1.5em;
+}
+
+.msg-inp:focus {
+    background-color: rgb(185, 185, 185);
+}
+
+.message-wrapper textarea {
+    width: 100%;
+    border: 2px solid #111;
+    font-size: 1.5em;
+}
+
+textarea:focus {
+    background-color: rgb(185, 185, 185);
+}
+
+.message-wrapper input[type=submit] {
+    width: 50%;
+    padding: 3%;
+    margin: 5%;
+    border: 2px solid #111;
+    font-size: 1.5em;
+}
+
+.message-wrapper input[type=submit]:hover {
+    background-color: rgb(185, 185, 185);
+    font-weight: 600;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+.cu-maps {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    color: #111;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 2em;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/au-bakery-text.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: gray;
-
+    color: #FFF;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-content: stretch;
+    align-content: center;
     align-items: center;
-    overflow: hidden;
 }
+
+.map-wrapper iframe {
+    border: 5px solid #FFF;
+    width: 50vw;
+    height: 50vh;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 900px) {
+    
+    header {
+        display: block;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        font-size: 1.5em;
+    }
+
+    .container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cu-header-bg.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgb(204, 191, 191);
+    }
+        
+    header p {
+        text-align: center;
+        font-family: "Scriptina", sans-serif;
+        font-size: 5.5vw;
+        margin: -5% 0 0 0;
+        padding: 0;
+        color: white;
+        display: block;
+    }
+        
+    nav ul {
+        list-style: none;
+        background-color: rgba(236, 119, 9, 0.1);
+        border-top: 1px solid rgb(236, 119, 9);
+        border-bottom: 1px solid rgb(236, 119, 9);
+        padding: 1% 0 1% 5%;
+        margin: 0;
+        }
+        nav li {
+        margin: 2%;
+        display: block;
+        text-align: left;
+        }
+        nav a {
+        text-decoration: none;
+        color: rgb(235, 141, 33);
+        font-family: "Playfair Display", sans-serif;
+        font-size: 3vw;
+        }
+        .social-network {
+        display: none;
+    }
+
+    .contact-us-wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        padding-top: 4.5vh;
+    }
+    
+    .contact-us {
+        width: 90%;
+        height: auto;
+        text-align: center;
+        color: #FFF;
+        font-family: "Playfair Display", sans-serif;
+    }
+    
+    .contact-us h1 {
+        font-size: 15vw;
+    }
+    
+    .contact-us p {
+        margin: 2vh;
+        font-size: 4.0vw;
+        overflow: hidden;
+    }
+
+    .message-wrapper {
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .message-wrapper form {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: center;
+    }
+    
+    .message-wrapper h2 {
+        font-size: 12vw;
+    }
+    .msg-lb{
+        font-size: 1.5em;
+        width: 50vw;
+    }
+    
+    .message-wrapper input[type=submit] {
+        width: 100%;
+    }
+    
+    .cu-maps {
+        width: 100%;
+        height: auto;
+        font-size: 1.5em;
+    }
+    
+    .map-wrapper iframe {
+        border: 5px solid #FFF;
+        width: 80vw;
+        height: 50vh;
+        margin: 5vh 0;
+    }
+
+
+
+}
+
