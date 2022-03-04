@@ -11,7 +11,7 @@
 }
 body {
   width: 100%;
-  background-color: gray;
+  background-color: rgb(245, 242, 238);
   margin: 0;
   font-size: 16px;
 }
@@ -54,8 +54,11 @@ nav a {
 .social-network {
   display: none;
 }
-.text-pastry {
+.social-network img {
+  width: 10%;
+  height: 10%;
 }
+
 .text-pastry h2 {
   font-size: 12vw;
   text-align: center;
@@ -73,7 +76,14 @@ nav a {
   padding: 0 0 5% 0;
   font-size: 4vw;
 }
-button {
+
+.btn-menu {
+  display: flex;
+  margin: 35% 0 0 0;
+  justify-content: center;
+  padding: 5% 0 15% 0;
+}
+.btn-menu p {
   background-color: rgb(235, 141, 33);
   padding: 1% 2% 1% 2%;
   color: white;
@@ -81,13 +91,6 @@ button {
   border: 1px dashed white;
   font-size: 3vw;
 }
-.btn-menu {
-  display: flex;
-  margin: 35% 0 0 0;
-  justify-content: center;
-  padding: 5% 0 15% 0;
-}
-
 .container1 {
   background-color: rgb(245, 242, 238);
   width: 100%;
@@ -141,6 +144,9 @@ button {
   display: inline;
   font-size: 6vw;
 }
+.quote-text img {
+  width: 3%;
+}
 .quote-text img:first-child {
   display: block;
   margin: 0 0 0 10%;
@@ -188,6 +194,9 @@ button {
   padding: 10%;
   outline: 4px solid rgb(250, 172, 5);
   outline-offset: -11vw;
+  background-image: url("../images/istockphoto-882780438-1024x1024.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .two-white-boxes {
   display: flex;
@@ -285,28 +294,27 @@ button {
   background-size: cover;
 }
 .breakfast-manu h2 {
-  font-size: 3rem;
+  font-size: 12vw;
   color: white;
   line-height: 0.6;
 }
 .breakfast-manu h2 span {
   color: orange;
-  font-size: 1rem;
+  font-size: 4vw;
   text-transform: uppercase;
 }
 .breakfast-manu h3 {
   color: white;
-  font-size: 1.5rem;
+  font-size: 4vw;
 }
-.breakfast-manu h3 p {
+.breakfast-manu p {
   color: rgb(240, 196, 114);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
   margin: 0;
-  font-size: 1rem;
 }
 .breakfast-manu h3 span {
   color: orange;
-  font-size: 2rem;
+  font-size: 4vw;
 }
 .pages {
   display: flex;
@@ -376,6 +384,77 @@ button {
   border: 2px solid black;
   color: orange;
 }
+.container-sendwich {
+  color: rgb(68, 66, 66);
+  text-align: center;
+}
+.container-sendwich h2 {
+  font-size: 10vw;
+  line-height: 0.6;
+  margin: 10% 0 15% 0;
+}
+.container-sendwich span {
+  font-size: 5vw;
+  color: orange;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 4vw;
+}
+.three-sendwiches {
+  background-color: rgb(245, 242, 238);
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: "Alegreya", sans-serif;
+}
+.small-sendwich {
+  padding: 5% 10% 0 10%;
+}
+
+.small-sendwich img {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+}
+.small-sendwich h3 {
+  color: orange;
+}
+.small-sendwich p {
+  font-size: 4vw;
+}
+.big-sendwich img {
+  width: 100%;
+  height: 100vw;
+  object-fit: cover;
+  padding: 2%;
+}
+.times {
+  display: none;
+}
+footer {
+  padding: 2%;
+  color: orange;
+  position: relative;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
+  font-family: "Alegreya", sans-serif;
+}
+footer p {
+  font-weight: bold;
+  font-size: 3vw;
+}
+.logo {
+  font-family: "Scriptina", sans-serif;
+  font-size: 15vw;
+  line-height: 1;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  margin: 0;
+  border-bottom: 1px solid orange;
+  font-weight: normal;
+}
 
 @media screen and (min-width: 900px) {
   .container {
@@ -444,10 +523,10 @@ button {
     justify-content: center;
     padding: 0 0 15% 0;
   }
-  .btn-menu button {
+  .btn-menu p {
     background-color: rgb(67, 70, 70);
     font-size: 1.5vw;
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   .container1 {
@@ -547,6 +626,23 @@ button {
   }
   .breakfast-manu {
     width: 50%;
+    height: auto;
+    padding-top: 0;
+  }
+  .breakfast-manu h2 {
+    font-size: 6vw;
+  }
+  .breakfast-manu h2 span {
+    font-size: 2vw;
+  }
+  .breakfast-manu h3 {
+    font-size: 2vw;
+  }
+  .breakfast-manu h3 p {
+    font-size: 2vw;
+  }
+  .breakfast-manu h3 span {
+    font-size: 2vw;
   }
   .pages {
     width: 50%;
@@ -593,6 +689,113 @@ button {
     margin: 10%;
     font-size: 1vw;
     border: 2px solid black;
+    color: orange;
+  }
+  .container-sendwich {
+  }
+  .container-sendwich h2 {
+    grid-area: title;
+  }
+  .three-sendwiches {
+    grid-area: content;
+  }
+  .big-sendwich {
+    grid-area: main;
+  }
+  .container-sendwich {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "title title title title"
+      "content main main main";
+  }
+
+  .small-sendwich {
+    padding: 5% 10% 0 10%;
+  }
+
+  .small-sendwich img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+  }
+  .container-sendwich h2 {
+    font-size: 8vw;
+  }
+  .small-sendwich p {
+    font-size: 1.5vw;
+  }
+  .container-sendwich span {
+    font-size: 3vw;
+  }
+  .big-sendwich {
+    margin: 20% 0 0 10%;
+    position: relative;
+    font-family: "Alegreya", sans-serif;
+  }
+  .big-sendwich img {
+    width: 90%;
+    height: 50vw;
+    padding: 0;
+    margin: 0;
+    border: 5px solid white;
+  }
+
+  .times {
+    display: block;
+    width: 20vw;
+    height: 50vw;
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    left: 65%;
+    top: 0;
+  }
+  .time {
+    width: 100%;
+    height: 33%;
+  }
+  .time h2 {
+    font-size: 3vw;
+    color: orange;
+    font-weight: bold;
+    line-height: 0.5;
+    margin-top: 4%;
+  }
+  .time p {
+    color: rgb(245, 206, 135);
+    font-size: 3.5vw;
+    line-height: 0.5;
+  }
+  .time span {
+    color: rgb(10, 10, 10);
+    font-size: 3.5vw;
+    line-height: 0.5;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(248, 237, 225);
+    margin-top: 5%;
+    border: none;
+  }
+  footer p {
+    display: inline-block;
+    font-size: 2vw;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    color: #444242;
+  }
+  .logo {
+    font-size: 4vw;
+    position: static;
+    line-height: 1;
+    margin-top: -3%;
+    border: none;
     color: orange;
   }
 }
