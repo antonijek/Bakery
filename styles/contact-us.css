@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: gray;
+    background-color: rgb(248, 237, 225);;
     margin: 0;
     font-size: 16px;
 }
@@ -151,36 +151,49 @@ nav a {
 .msg-inp {
     width: 100%;
     padding: 3%;
-    border: 2px solid #111;
+    border: none;
+    border-bottom: 3px solid #111;
     font-size: 1.5em;
+    transition: width 0.5s, height 0.5s;
 }
 
-.msg-inp:focus {
+.msg-inp:hover {
+    width: 150%;
     background-color: rgb(185, 185, 185);
+    border: none;
+    border-bottom: 3px solid #FFF;
+    
 }
 
 .message-wrapper textarea {
     width: 100%;
-    border: 2px solid #111;
+    border: none;
+    border-bottom: 3px solid #111;
     font-size: 1.5em;
+    transition: width 0.5s, height 0.5s;
 }
 
-textarea:focus {
+.message-wrapper textarea:hover {
+    width: 150%;
     background-color: rgb(185, 185, 185);
+    border: none;
+    border-bottom: 3px solid #FFF;
 }
 
 .message-wrapper input[type=submit] {
     width: 50%;
     padding: 3%;
     margin: 5%;
-    border: 2px solid #111;
+    border: 3px solid #111;
     font-size: 1.5em;
+    transition: width 0.5s, height 0.5s;
 }
 
 .message-wrapper input[type=submit]:hover {
+    width: 110%;
+    border: 3px solid #FFF;
     background-color: rgb(185, 185, 185);
     font-weight: 600;
-    border: 2px solid #FFF;
     color: #FFF;
 }
 
@@ -207,6 +220,38 @@ textarea:focus {
     border: 5px solid #FFF;
     width: 50vw;
     height: 50vh;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background-color: rgb(248, 237, 225);
+    margin-top: 2%;
+    border: none;
+}
+
+footer p {
+    display: inline-block;
+    font-size: 2vw;
+    font-weight: normal;
+    padding: 0;
+    line-height: 2;
+    color: #444242;
+    left: 40%;
+    top: 20%;
+    margin: 0;
+    font-weight: normal;
+}
+.logo {
+    font-family: "Scriptina", sans-serif;
+    font-size: 4vw;
+    position: static;
+    line-height: 1;
+    margin-top: -3%;
+    border: none;
+    color: orange;
 }
 
 /* Mobile devices */
@@ -314,9 +359,31 @@ textarea:focus {
         font-size: 1.5em;
         width: 50vw;
     }
-    
+
+    .msg-inp:hover {
+        width: 105%;
+        background-color: rgb(185, 185, 185);
+        border: none;
+        border-bottom: 3px solid #FFF;
+    }
+
+    .message-wrapper textarea:hover {
+        width: 105%;
+        background-color: rgb(185, 185, 185);
+        border: none;
+        border-bottom: 3px solid #FFF;
+    }
+
     .message-wrapper input[type=submit] {
         width: 100%;
+    }
+
+    .message-wrapper input[type=submit]:hover {
+        width: 105%;
+        border: 3px solid #FFF;
+        background-color: rgb(185, 185, 185);
+        font-weight: 600;
+        color: #FFF;
     }
     
     .cu-maps {
@@ -331,6 +398,34 @@ textarea:focus {
         height: 50vh;
         margin: 5vh 0;
     }
+
+    footer {
+        display: block;
+        padding: 2%;
+        color: orange;
+        position: relative;
+        border-top: 1px solid orange;
+        border-bottom: 1px solid orange;
+        font-family: "Alegreya", sans-serif;
+      }
+      footer p {
+        color: orange;
+        line-height: 2;
+        display: block;
+        font-weight: bold;
+        font-size: 3vw;
+      }
+      .logo { 
+        font-family: "Scriptina", sans-serif;
+        font-size: 15vw;
+        line-height: 1;
+        position: absolute;
+        left: 40%;
+        top: 20%;
+        margin: 0;
+        border-bottom: 1px solid orange;
+        font-weight: normal;
+      }
 
 
 
