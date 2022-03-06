@@ -90,6 +90,8 @@ nav a {
   font-weight: bold;
   border: 1px dashed white;
   font-size: 3vw;
+}
+.container:hover .btn-menu p {
   animation: move-btn 2s;
 }
 @keyframes move-btn {
@@ -494,6 +496,12 @@ footer p {
 @media screen and (min-width: 900px) {
   .container {
     background-image: url("../images/brad.png");
+  }
+  .container:hover .btn-menu {
+    animation: none;
+  }
+  .btn-menu p {
+    animation: move-btn 2s;
   }
   header {
     display: grid;
