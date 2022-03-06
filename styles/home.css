@@ -90,6 +90,30 @@ nav a {
   font-weight: bold;
   border: 1px dashed white;
   font-size: 3vw;
+  animation: move-btn 2s;
+}
+@keyframes move-btn {
+  0% {
+    position: relative;
+    left: -100%;
+  }
+  30% {
+    position: relative;
+    left: -100%;
+  }
+  60% {
+    position: relative;
+    left: -100%;
+    font-size: 0;
+  }
+
+  100% {
+    border: 5px solid white;
+    position: relative;
+    left: 0;
+    color: white;
+    font-size: 2vw;
+  }
 }
 .container1 {
   background-color: rgb(245, 242, 238);
@@ -250,6 +274,17 @@ nav a {
   background-color: white;
   font-family: "Alegreya", sans-serif;
   text-align: center;
+}
+.two-white-boxes:hover .small-box {
+  animation: move 500ms;
+}
+@keyframes move {
+  0% {
+    transform: scale(4);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .small-box h2 {
   font-size: 4vw;
@@ -527,6 +562,7 @@ footer p {
     background-color: rgb(67, 70, 70);
     font-size: 1.5vw;
     opacity: 0.7;
+    position: relative;
   }
 
   .container1 {
@@ -590,6 +626,9 @@ footer p {
   }
   .two-white-boxes {
     justify-content: flex-start;
+  }
+  .container-pancakes:hover .small-box {
+    animation: move 500ms;
   }
   .big-box h2 {
     font-size: 3vw;
